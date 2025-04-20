@@ -1,0 +1,22 @@
+{% schema %}
+{
+  "name": "Quote of the Day",
+  "settings": [
+    {
+      "type": "text",
+      "id": "quote_text",
+      "label": "Your Quote",
+      "default": "Be the change you wish to see in the world."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quote of the Day"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="quote-section">
+  <blockquote>"{{ section.settings.quote_text }}"</blockquote>
+</div>
